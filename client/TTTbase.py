@@ -53,7 +53,7 @@ class GameField:
         return {-1:"(?P<_>-1){"+str(winBy)+",}", 1:"(?<!-)1{"+str(winBy)+",}"}
 
     def getWinner(self):
-        # horizontal and vertical diagonal
+        # horizontal and vertical and diagonal
         for i in [self.board, np.rot90(self.board), *[self.rotate45(i) for i in [self.board, self.board[::-1]]]]:
             for j in i:
                 string = "".join(map(lambda x : str(int(x)), j))
