@@ -66,7 +66,7 @@ export default class GameField {
         // check diagonally
         for(let i = 0; i<this.grid.length; i+=1){
             for(let j = 0; j<2; j+=1){
-                
+                // implementation needed
             }
         }
 
